@@ -631,6 +631,8 @@ EndList
                                       if os.path.exists(IncludeFilePathAbs):
                                           IncludeDsc  = open(IncludeFilePathAbs, "r")
                                           break
+                                  else:
+                                      IncludeDsc  = open(IncludeFilePath, "r")
                                 else:
                                   IncludeDsc  = open(IncludeFilePath, "r")
                                 if IncludeDsc == None:
